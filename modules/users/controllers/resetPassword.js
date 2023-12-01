@@ -1,5 +1,6 @@
 const mongoose = require("mongoose");
 const bcrypt = require("bcrypt");
+const emailManager = require("../../../managers/emailManager");
 
 const resetPassword = async (req, res) => {
   const { email, new_password, reset_code } = req.body;
